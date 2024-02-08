@@ -6,7 +6,7 @@
 #
 #
 
-o3de_gem_setup("PhysX5")
+o3de_gem_setup("PhysX")
 
 ly_add_external_target_path(${CMAKE_CURRENT_SOURCE_DIR}/3rdParty)
 
@@ -15,7 +15,7 @@ o3de_pal_dir(pal_source_dir ${CMAKE_CURRENT_LIST_DIR}/Source/Platform/${PAL_PLAT
 include(${pal_source_dir}/PAL_${PAL_PLATFORM_NAME_LOWERCASE}.cmake) # for PAL_TRAIT_PHYSX_SUPPORTED
 
 if(PAL_TRAIT_PHYSX_SUPPORTED)
-    set(physx_dependency 3rdParty::PhysX5)
+    set(physx_dependency 3rdParty::PhysX4)
     set(physx_files ../Code/physx_files.cmake)
     set(physx_module_files physx_module_files.cmake)
     set(physx_shared_files ../Code/physx_shared_files.cmake)
@@ -35,7 +35,7 @@ ly_add_target(
     COMPILE_DEFINITIONS
         PUBLIC
             PHYSX_ENABLE_MULTI_THREADING
-            PHYSX_SETREG_GEM_NAME="PhysX5"
+            PHYSX_SETREG_GEM_NAME="PhysX"
             $<$<NOT:$<CONFIG:release>>:AZ_PHYSICS_DEBUG_ENABLED>
     INCLUDE_DIRECTORIES
         PUBLIC

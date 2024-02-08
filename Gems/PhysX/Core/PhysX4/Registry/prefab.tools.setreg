@@ -11,7 +11,7 @@
                     {
                         "PlayInEditor":
                         {
-                            "PhysX5": 
+                            "PhysX": 
                             { 
                                 "$type": "PhysX::PhysicsPrefabProcessor",
                                 "$stack_before": "Prefab catchment"
@@ -19,7 +19,7 @@
                         },
                         "GameObjectCreation":
                         {
-                            "PhysX5": 
+                            "PhysX": 
                             { 
                                 "$type": "PhysX::PhysicsPrefabProcessor",
                                 "$stack_before": "Prefab catchment"
