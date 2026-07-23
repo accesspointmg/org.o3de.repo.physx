@@ -14,7 +14,7 @@
 #include <AzFramework/Physics/PhysicsSystem.h>
 #include <AzFramework/Physics/PropertyTypes.h>
 #include <AzToolsFramework/API/ToolsApplicationAPI.h>
-#include <LyViewPaneNames.h>
+#include <O3deViewPaneNames.h>
 
 namespace PhysX
 {
@@ -84,7 +84,7 @@ namespace PhysX
         void CollisionLayerWidget::OnEditButtonClicked()
         {
             // Open configuration window
-            AzToolsFramework::EditorRequestBus::Broadcast(&AzToolsFramework::EditorRequests::OpenViewPane, LyViewPane::PhysXConfigurationEditor);
+            AzToolsFramework::EditorRequestBus::Broadcast(&AzToolsFramework::EditorRequests::OpenViewPane, O3deViewPane::PhysXConfigurationEditor);
 
             // Set to collision layers tab
             ConfigurationWindowRequestBus::Broadcast(&ConfigurationWindowRequests::ShowCollisionLayersTab);

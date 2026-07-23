@@ -30,7 +30,7 @@
 #include <LmbrCentral/Shape/QuadShapeComponentBus.h>
 #include <LmbrCentral/Shape/ShapeComponentBus.h>
 #include <LmbrCentral/Shape/SphereShapeComponentBus.h>
-#include <LyViewPaneNames.h>
+#include <O3deViewPaneNames.h>
 #include <PhysX/SystemComponentBus.h>
 #include <RigidBodyStatic.h>
 #include <ShapeColliderComponent.h>

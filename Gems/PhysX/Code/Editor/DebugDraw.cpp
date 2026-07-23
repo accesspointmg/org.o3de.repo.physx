@@ -14,7 +14,7 @@
 #include <AzCore/Interface/Interface.h>
 #include <AzFramework/Entity/EntityDebugDisplayBus.h>
 #include <AzToolsFramework/API/ToolsApplicationAPI.h>
-#include <LyViewPaneNames.h>
+#include <O3deViewPaneNames.h>
 #include <LmbrCentral/Geometry/GeometrySystemComponentBus.h>
 #include <Source/Utils.h>
 
@@ -38,7 +38,7 @@ namespace PhysX
         {
             // Open configuration window
             AzToolsFramework::EditorRequestBus::Broadcast(&AzToolsFramework::EditorRequests::OpenViewPane,
-                LyViewPane::PhysXConfigurationEditor);
+                O3deViewPane::PhysXConfigurationEditor);
 
             // Set to Global Settings configuration tab
             Editor::ConfigurationWindowRequestBus::Broadcast(&Editor::ConfigurationWindowRequests::ShowGlobalSettingsTab);

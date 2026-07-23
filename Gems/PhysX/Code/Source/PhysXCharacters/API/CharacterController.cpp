@@ -760,7 +760,7 @@ namespace PhysX
             return;
         }
 
-        // height needs to be adjusted due to differences between LY and PhysX definitions of capsule and box dimensions
+        // height needs to be adjusted due to differences between O3DE and PhysX definitions of capsule and box dimensions
         float adjustedHeight = height;
         {
             PHYSX_SCENE_READ_LOCK(m_pxController->getScene());
@@ -773,7 +773,7 @@ namespace PhysX
                     AZ_Error("PhysX Character Controller", false, "Capsule height must exceed twice its radius.");
                     return;
                 }
-                // LY defines capsule height to include the end caps, but PhysX does not
+                // O3DE defines capsule height to include the end caps, but PhysX does not
                 adjustedHeight = height - 2.0f * radius;
             }
             else
@@ -804,7 +804,7 @@ namespace PhysX
         else if (m_pxController->getType() == physx::PxControllerShapeType::eCAPSULE)
         {
             // PhysX capsule height refers to the length of the cylindrical section.
-            // LY capsule height refers to the length including the hemispherical caps.
+            // O3DE capsule height refers to the length including the hemispherical caps.
             auto capsuleController = static_cast<physx::PxCapsuleController*>(m_pxController);
             return capsuleController->getHeight() + 2.0f * capsuleController->getRadius();
         }
@@ -850,7 +850,7 @@ namespace PhysX
 
             PHYSX_SCENE_WRITE_LOCK(m_pxController->getScene());
             // PhysX capsule height refers to the length of the cylindrical section.
-            // LY capsule height refers to the length including the hemispherical caps.
+            // O3DE capsule height refers to the length including the hemispherical caps.
             capsuleController->setHeight(height - 2.0f * radius);
         }
 

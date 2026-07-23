@@ -843,7 +843,7 @@ namespace PhysXDebug
     {
         AZ_PROFILE_FUNCTION(Physics);
 
-        // color mapping from PhysX to LY user preference: \PhysX_3.4\Include\common\PxRenderBuffer.h
+        // color mapping from PhysX to O3DE user preference: \PhysX_3.4\Include\common\PxRenderBuffer.h
         switch (static_cast<physx::PxDebugColor::Enum>(originalColor))
         {
         case physx::PxDebugColor::eARGB_BLACK:

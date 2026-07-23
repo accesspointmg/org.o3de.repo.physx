@@ -106,7 +106,7 @@ namespace PhysX::Utils::Characters
                 physx::PxCapsuleControllerDesc capsuleDesc;
 
                 const Physics::CapsuleShapeConfiguration& capsuleConfig = static_cast<const Physics::CapsuleShapeConfiguration&>(*characterConfig.m_shapeConfig);
-                // LY height means total height, PhysX means height of straight section
+                // O3DE height means total height, PhysX means height of straight section
                 capsuleDesc.height = AZ::GetMax(epsilon, capsuleConfig.m_height - 2.0f * capsuleConfig.m_radius);
                 capsuleDesc.radius = capsuleConfig.m_radius;
                 capsuleDesc.climbingMode = physx::PxCapsuleClimbingMode::eCONSTRAINED;

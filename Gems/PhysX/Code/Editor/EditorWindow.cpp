@@ -12,7 +12,7 @@
 #include <AzFramework/Physics/Configuration/SceneConfiguration.h>
 #include <AzToolsFramework/API/ViewPaneOptions.h>
 #include <AzToolsFramework/API/ToolsApplicationAPI.h>
-#include <LyViewPaneNames.h>
+#include <O3deViewPaneNames.h>
 
 #include <Editor/ui_EditorWindow.h>
 #include <Editor/EditorWindow.h>
@@ -49,7 +49,7 @@ namespace PhysX
             options.preferedDockingArea = Qt::LeftDockWidgetArea;
             options.saveKeyName = "PhysXConfiguration";
             options.isPreview = true;
-            AzToolsFramework::RegisterViewPane<EditorWindow>(LyViewPane::PhysXConfigurationEditor, LyViewPane::CategoryTools, options);
+            AzToolsFramework::RegisterViewPane<EditorWindow>(O3deViewPane::PhysXConfigurationEditor, O3deViewPane::CategoryTools, options);
         }
 
         void EditorWindow::SaveConfiguration(

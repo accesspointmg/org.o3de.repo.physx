@@ -26,7 +26,7 @@
 #include <AzFramework/Physics/PropertyTypes.h>
 #include <AzToolsFramework/UI/PropertyEditor/PropertyBoolComboBoxCtrl.hxx>
 
-#include <LyViewPaneNames.h>
+#include <O3deViewPaneNames.h>
 
 namespace PhysX
 {
@@ -131,7 +131,7 @@ namespace PhysX
     static void OpenPhysXConfigurationPane()
     {
         AzToolsFramework::EditorRequestBus::Broadcast(
-            &AzToolsFramework::EditorRequests::OpenViewPane, LyViewPane::PhysXConfigurationEditor);
+            &AzToolsFramework::EditorRequests::OpenViewPane, O3deViewPane::PhysXConfigurationEditor);
     }
 
     static AzToolsFramework::GenericEditResultOutcome<bool> OnEditButtonClicked(bool comboBoxValue)

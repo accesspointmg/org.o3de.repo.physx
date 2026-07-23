@@ -14,7 +14,7 @@
 #include <AzToolsFramework/API/ToolsApplicationAPI.h>
 #include <Editor/CollisionGroupWidget.h>
 #include <Editor/ConfigurationWindowBus.h>
-#include <LyViewPaneNames.h>
+#include <O3deViewPaneNames.h>
 
 namespace PhysX
 {
@@ -88,7 +88,7 @@ namespace PhysX
         void CollisionGroupWidget::OnEditButtonClicked()
         {
             // Open configuration window
-            AzToolsFramework::EditorRequestBus::Broadcast(&AzToolsFramework::EditorRequests::OpenViewPane, LyViewPane::PhysXConfigurationEditor);
+            AzToolsFramework::EditorRequestBus::Broadcast(&AzToolsFramework::EditorRequests::OpenViewPane, O3deViewPane::PhysXConfigurationEditor);
 
             // Set to collision groups tab
             ConfigurationWindowRequestBus::Broadcast(&ConfigurationWindowRequests::ShowCollisionGroupsTab);
