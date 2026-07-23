@@ -6,7 +6,5 @@
 #
 #
 
-set(O3DE_COMPILE_OPTIONS
-    PUBLIC
-        -fexceptions # poly2tri 3rd Party library uses exception handling
+set(FILES
 )
