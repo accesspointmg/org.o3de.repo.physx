@@ -1,0 +1,63 @@
+{
+  "$schemaVersion": "2.0.0",
+  "$schema": "https://canonical.o3de.org/o3de-repo-2.0.0.json",
+  "repo": {
+    "name": "org.o3de.repo.physx",
+    "display_name": "PhysX Family Repo",
+    "description": "Family repository for the PhysX gems (Common, Core, Debug): multi-gem plus overlays, hoisted from the engine with full git history.",
+    "type": "repo"
+  },
+  "origin": {
+    "name": "The Linux Foundation",
+    "url": "https://www.linuxfoundation.org"
+  },
+  "licenses": [
+    {
+      "license_identifier": "Apache-2.0",
+      "display_name": "Apache License 2.0",
+      "relative_path": "LICENSE_APACHE2.TXT",
+      "scopes": [
+        "All source code"
+      ]
+    },
+    {
+      "license_identifier": "MIT",
+      "display_name": "MIT License",
+      "relative_path": "LICENSE_MIT.TXT",
+      "scopes": [
+        "All source code"
+      ]
+    }
+  ],
+  "canonical_tags": [
+    "Repo"
+  ],
+  "children": {
+    "engines": [],
+    "projects": [],
+    "templates": [],
+    "repos": [],
+    "gems": [
+      "Gems/PhysXCommon/gem.2-0-0.json",
+      "Gems/PhysX/gem.2-0-0.json",
+      "Gems/PhysXDebug/gem.2-0-0.json"
+    ],
+    "overlays": [
+      "Overlays/physx.android/overlay.json",
+      "Overlays/physx.common/overlay.json",
+      "Overlays/physx.emscripten/overlay.json",
+      "Overlays/physx.ios/overlay.json",
+      "Overlays/physx.linux/overlay.json",
+      "Overlays/physx.mac/overlay.json",
+      "Overlays/physx.windows/overlay.json"
+    ]
+  },
+  "remote": {
+    "engines": [],
+    "projects": [],
+    "gems": [],
+    "templates": [],
+    "repos": [],
+    "overlays": []
+  }
+}
