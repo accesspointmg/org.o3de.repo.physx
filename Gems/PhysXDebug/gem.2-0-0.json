@@ -107,5 +107,16 @@
     "Simulation",
     "Debug",
     "org.o3de.gem.physx5debug"
+  ],
+  "releases": [
+    {
+      "name": "2607.0",
+      "source_controls": [
+        {
+          "git": "https://github.com/accesspointmg/o3de-physx.git",
+          "tag": "2607.0"
+        }
+      ]
+    }
   ]
 }
