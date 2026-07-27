@@ -6,10 +6,10 @@
         "display_name": "PhysX Common Overlay",
         "description": "Platform overlay (Common) for org.o3de.gem.physx",
         "version": "5.0.0",
-        "type": "overlay",
-        "target": "org.o3de.gem.physx",
-        "platform": "common"
+        "type": "overlay"
     },
+    "extends": "org.o3de.gem.physx>=5.0.0",
+    "precedence": 0,
     "origin": {
         "name": "The Linux Foundation",
         "url": "https://www.linuxfoundation.org"
