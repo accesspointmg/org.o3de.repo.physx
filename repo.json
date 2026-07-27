@@ -4,34 +4,12 @@
     "repo": {
         "name": "org.o3de.repo.physx",
         "display_name": "PhysX Family Repo",
-        "description": "Family repository for the PhysX gems (Common, Core, Debug): multi-gem plus overlays, hoisted from the engine with full git history.",
-        "type": "repo"
+        "description": "Family repository for the PhysX gems (Common, Core, Debug): multi-gem plus overlays, hoisted from the engine with full git history."
     },
     "origin": {
         "name": "The Linux Foundation",
         "url": "https://www.linuxfoundation.org"
     },
-    "licenses": [
-        {
-            "license_identifier": "Apache-2.0",
-            "display_name": "Apache License 2.0",
-            "relative_path": "LICENSE_APACHE2.TXT",
-            "scopes": [
-                "All source code"
-            ]
-        },
-        {
-            "license_identifier": "MIT",
-            "display_name": "MIT License",
-            "relative_path": "LICENSE_MIT.TXT",
-            "scopes": [
-                "All source code"
-            ]
-        }
-    ],
-    "canonical_tags": [
-        "Repo"
-    ],
     "children": {
         "engines": [],
         "projects": [],
